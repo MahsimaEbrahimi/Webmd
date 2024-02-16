@@ -1,0 +1,211 @@
+body
+{
+    margin: 0%;
+    background-color: hsla(0,0%,100%,.8);
+}
+
+header
+{
+    z-index: 10;
+    background-color: rgb(27, 27, 113);   
+     text-align: center;
+     position: fixed;
+     width: 100%;
+     top: 0;
+}
+
+.nav-item
+{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+    padding: 5px;
+    font-size: 20px;
+    position: relative;
+}
+.Action::after
+{
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    transition: 100ms all;
+    margin-bottom:20px;
+
+}
+.Action:hover:after
+{
+    width: 100%;
+}
+
+.imageH
+{
+    display:inline-block;
+    width:80px;
+    width:80px;    
+    overflow: hidden; 
+    padding-left: 0;
+}
+
+.subscribe
+{
+    border: 2px solid white;
+    border-radius: 10px;
+
+}
+
+.drop-more
+{
+    z-index: 15;
+    /* display: none; */
+    position: absolute;  
+    background-color: rgb(27, 27, 113);
+    min-width: 160px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    left: -30%;
+    visibility: hidden;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+.more
+{
+    position: relative;
+}
+
+.more:hover .drop-more
+{
+    /* display: block; */
+    left: -10%;
+    opacity: 1;
+    visibility: visible;
+}
+.drop-more-item
+{
+    text-align: left;
+    padding: 15px 0;
+    margin: 0 15px;
+    border-bottom: 1px solid #c6cedb;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.drop-more-item-link
+{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.drop-more-item:last-child
+{
+    border-bottom: none;
+}
+
+.drop-more-item:hover .drop-more-item-link
+{
+    color: blue;
+}
+
+.Space
+{
+   border-left: 2px solid white;
+   height: 2em;
+}
+
+.subscribe:hover
+{
+    background-color:white;
+    color: rgb(27, 27, 113);
+}
+
+.search:hover
+{
+    color:  rgb(27, 27, 113);
+    background-color: white;
+    border-radius: 30%;
+}
+
+.main_container
+{
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    justify-content: baseline;
+}
+
+.leftSide
+{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(39, 5, 150);
+    width: 50%;
+
+}
+.inside_left
+{
+    line-height: 50px;
+}
+.righttSide
+{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    background-color: rgb(205, 210, 243);
+    width: 50%;
+}
+.aa
+{
+    text-align: center;
+}
+.pic1,.pic2,.pic3,.pic4
+{
+    display: flex;
+}
+.inside_pics
+{
+    margin-left: 20px;
+}
+
+.login_lable
+{
+    text-align: center;
+}
+.login_button
+{
+    display: block;
+    margin-top: 30px;
+    background-color: rgb(9, 9, 140);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+
+}
+.login_button:hover
+{
+    background-color: white;
+    color: black;
+}
+.MveSignUp
+{
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    display: flex;
+
+}

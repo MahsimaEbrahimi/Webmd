@@ -1,0 +1,261 @@
+header
+{
+    z-index: 10;
+    background-color: rgb(27, 27, 113);   
+     text-align: center;
+     position: fixed;
+     width: 100%;
+     top: 0;
+}
+
+.nav-item
+{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+    padding: 5px;
+    font-size: 20px;
+    position: relative;
+}
+.Action::after
+{
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    transition: 100ms all;
+    margin-bottom:20px;
+
+}
+.Action:hover:after
+{
+    width: 100%;
+}
+
+.imageH
+{
+    display:inline-block;
+    width:80px;
+    width:80px;    
+    overflow: hidden; 
+    padding-left: 0;
+}
+
+
+
+.subscribe
+{
+    border: 2px solid white;
+    border-radius: 10px;
+
+}
+
+.STORIES
+{
+  border-bottom: 2px solid  #a9a9e6;
+  margin-top: 3em;
+  padding-top: 3em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.medicin
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0;
+    border-bottom: 2px solid  rgb(169, 169, 230);
+}
+
+.medicin-img-container
+{
+    overflow: hidden;
+}
+
+.medicin-img
+{
+    width: 100%;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.medicin:hover .medicin-img
+{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.medicin-texts
+{
+    padding-left: 50px;
+}
+
+.cancer
+{
+    font-size: 20px;
+}
+
+.Space
+{
+   border-left: 2px solid white;
+   height: 2em;
+}
+
+.subscribe:hover
+{
+    background-color:white;
+    color: rgb(27, 27, 113);
+}
+
+.search:hover
+{
+    color:  rgb(27, 27, 113);
+    background-color: white;
+    border-radius: 30%;
+}
+
+.share
+{
+    width: 150px;
+    height: 100px;
+
+    display: inline-block;   
+    vertical-align: middle;
+
+}
+.wrapShare
+{
+    display: inline-block;   
+     padding-top: 2em;    
+     padding-bottom: 2em;
+}
+
+.PhotoText
+{
+    display: inline-block;    
+    padding: 0 2em;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.ShareRest
+{
+    padding-left: 1em;
+}
+
+.wrapper_all
+{
+    border-bottom: 2px solid  rgb(169, 169, 230);
+    text-align: center;
+}
+
+.LivingHealthy
+{
+
+    border-bottom: 2px solid  rgb(169, 169, 230);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-top: 3em;
+}
+.Health
+{
+    width: 200px;
+    height: 300px;
+    padding-left: 0em;
+    display: block;
+    
+}
+.container
+{
+    text-align: center;
+    padding: 2em 0;
+}
+
+.imgT
+{
+  position: relative;
+
+}
+.imgTT
+{
+  display: inline-block;
+  padding-left: 2em;
+}
+.imgTc
+{
+    position: absolute;
+    top:80%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+}
+body
+{
+    margin: 0%;
+}
+
+.drop-more
+{
+    z-index: 15;
+    position: absolute;  
+    background-color: rgb(27, 27, 113);
+    min-width: 160px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    left: -30%;
+    visibility: hidden;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+.more
+{
+    position: relative;
+}
+
+.more:hover .drop-more
+{
+    left: -10%;
+    opacity: 1;
+    visibility: visible;
+}
+.drop-more-item
+{
+    text-align: left;
+    padding: 15px 0;
+    margin: 0 15px;
+    border-bottom: 1px solid #c6cedb;
+}
+
+.drop-more-item-link
+{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.drop-more-item:last-child
+{
+    border-bottom: none;
+}
+
+.drop-more-item:hover .drop-more-item-link
+{
+    color: blue;
+}

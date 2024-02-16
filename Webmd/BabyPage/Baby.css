@@ -1,0 +1,267 @@
+body
+{
+    margin: 0%;
+    background-color: hsla(0,0%,100%,.8);
+}
+
+header
+{
+    z-index: 10;
+    background-color: rgb(27, 27, 113);   
+     text-align: center;
+     position: fixed;
+     width: 100%;
+     top: 0;
+}
+
+.nav-item
+{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+    padding: 5px;
+    font-size: 20px;
+    position: relative;
+}
+.Action::after
+{
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    transition: 100ms all;
+    margin-bottom:20px;
+
+}
+.Action:hover:after
+{
+    width: 100%;
+}
+
+.imageH
+{
+    display:inline-block;
+    width:80px;
+    width:80px;    
+    overflow: hidden; 
+    padding-left: 0;
+}
+
+.subscribe
+{
+    border: 2px solid white;
+    border-radius: 10px;
+
+}
+
+.drop-more
+{
+    z-index: 15;
+    /* display: none; */
+    position: absolute;  
+    background-color: rgb(27, 27, 113);
+    min-width: 160px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    left: -30%;
+    visibility: hidden;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+.more
+{
+    position: relative;
+}
+
+.more:hover .drop-more
+{
+    /* display: block; */
+    left: -10%;
+    opacity: 1;
+    visibility: visible;
+}
+.drop-more-item
+{
+    text-align: left;
+    padding: 15px 0;
+    margin: 0 15px;
+    border-bottom: 1px solid #c6cedb;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.drop-more-item-link
+{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.drop-more-item:last-child
+{
+    border-bottom: none;
+}
+
+.drop-more-item:hover .drop-more-item-link
+{
+    color: blue;
+}
+
+.Space
+{
+   border-left: 2px solid white;
+   height: 2em;
+}
+
+.subscribe:hover
+{
+    background-color:white;
+    color: rgb(27, 27, 113);
+}
+
+.search:hover
+{
+    color:  rgb(27, 27, 113);
+    background-color: white;
+    border-radius: 30%;
+}
+
+.container_baby_main
+{   
+    margin-top: 90px;
+     background-image:url("./Condition_Hero_Lifestyle_BabyGrow.webp");
+    width: 100%;
+    display: flex;
+    height: 30rem;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid  rgb(169, 202, 230);}
+.Rectangle
+{
+    width: 500px;
+    height: 200px;
+    background-color: rgb(32, 8, 118);
+    border-radius: 30px;
+}
+.LeftSide
+{
+    width: 50%;
+}
+.BabyTitle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    padding-top: 30px;
+}
+.BabyText
+{
+    padding-top: 30px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 30px;
+}
+.downTextBaby
+{
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid  rgb(169, 202, 230);
+
+}
+.CommonBaby
+{   
+     padding-top: 30px;
+     padding: 40px;  
+      padding-bottom: 30px;
+      text-align: center;
+      text-decoration: none;
+      color: black;
+}
+.CommonBaby:hover
+{
+    background-color: rgb(197, 191, 206);
+    color: rgb(18, 37, 159);
+}
+.BabyNutritionTitle
+{
+    padding-top: 30px;
+    padding-left: 30px;
+    border-bottom: 2px solid  rgb(169, 202, 230);
+    font-size: 20px;
+}
+.BabyNutrition
+{
+    overflow: hidden;
+    margin-top:  30px;
+}
+
+.BabyNutrition-img
+{
+    width: 100%;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.BabyNutrition:hover .BabyNutrition-img
+{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.BabyNutritionContainer
+{
+    display: flex;
+    justify-content: center;
+    background-color:rgba(168, 139, 236, 0.16);
+    align-items: center;
+
+}
+.common
+{
+    text-decoration: none;
+    color: black;  
+      padding-top: 30px;
+
+}
+.common:hover
+{
+    color: rgb(47, 0, 255);
+}
+.BabyNutritionRightSide
+{
+    padding-bottom: 30px;
+    padding-left: 20px;
+    border-bottom: 2px solid  rgb(169, 202, 230);   
+}
+.infant
+{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.all
+{
+    display: flex;
+    flex-direction: column;
+}
+.BabyTitle:hover
+{
+    font-size: 35px;
+}

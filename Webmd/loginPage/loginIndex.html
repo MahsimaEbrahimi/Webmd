@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style_login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-right.css' rel='stylesheet'>
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <a href="../index.html" class="nav-item ">
+      <img src="webmd_logo_white.svg" class="imageH">
+    </a>
+
+    <a class="nav-item Action">
+      <p>conditions</p>
+    </a>
+
+    <a class="nav-item Action">
+      <p>Drugs and supplements</p>
+    </a>
+
+    <span class="nav-item Action more">
+      <p>Well-bieng</p>
+      <ul class="drop-more">
+        <li class="drop-more-item">
+          <a href="" class="drop-more-item-link">Aging Well</a>
+        </li>
+        <li class="drop-more-item">
+          <a href="../BabyPage/BabyIndex.Html" class="drop-more-item-link">Baby</a>
+        </li>
+        <li class="drop-more-item">
+          <a href="" class="drop-more-item-link">Birth Control</a>
+        </li>
+      </ul>
+    </span>
+
+    <a class="nav-item Action">
+      <p>Symptom checker</p>
+    </a>
+
+    <a href="../search for a doctor/SearchDocIndex.html" class="nav-item Action">
+      <p>find a doctor</p>
+    </a>
+
+    <span class="nav-item Action more">
+      <p>more</p>
+      <ul class="drop-more">
+        <li class="drop-more-item">
+          <a href="../news/newsIndex.html" class="drop-more-item-link">news</a>
+        </li>
+        <li class="drop-more-item">
+          <a href="" class="drop-more-item-link">blogs</a>
+        </li>
+        <li class="drop-more-item">
+          <a href="" class="drop-more-item-link">products</a>
+        </li>
+        <li class="drop-more-item">
+          <a href="" class="drop-more-item-link">Webinars</a>
+        </li>
+      </ul>
+    </span>
+
+    <a class="nav-item ">
+      <p class="Space" style="color: rgb(27, 27, 113);">|</p>
+    </a>
+
+    <a class="nav-item subscribe">
+      subscribe
+    </a>
+
+    <a class="nav-item login " href="../loginPage/loginIndex.html" style="text-decoration: none;">
+      <p class="Action">log in</p>
+    </a>
+
+    <a href="../search for a doctor/SearchDocIndex.html" class="nav-item search">
+      <i class="fa fa-search"></i>
+    </a>
+  </header>
+
+  <div class="main_container">
+    <div class="leftSide">
+      <div class="inside_left">
+        <div style="font-weight:bold ; font-size: 20px;  ;" class="aa"> Get access to everything WebMd offers</div>
+
+        <div class="pic1">
+          <img src="./auth-icon-1.20841929.svg" style="height: 40px;">
+          <div class="inside_pics">Personalized tools for managing your health</div>
+        </div>
+
+        <div class="pic2">
+          <img src="./auth-icon-2.e105126d.svg" style="height: 40px;">
+          <div class="inside_pics">Health and wellness updates delivered to your inbox</div>
+
+        </div>
+
+        <div class="pic3">
+          <img src="./auth-icon-3.ced0b2ae.svg" style="height: 40px;">
+          <div class="inside_pics">Saved articles, conditions and medications</div>
+        </div>
+
+        <div class="pic4">
+          <img src="./auth-icon-4.bd66851b.svg" style="height: 40px;">
+          <div class="inside_pics">Expert insights and patient stories</div>
+        </div>
+      </div>
+    </div>
+    <div class="righttSide">
+      <div style="width: 50%;">
+        <p class="login_lable" style="font-weight: bolder; font-size: 30px;">log in</p>
+        <form method="get" onsubmit="signin()">
+          <div style="font-size: 20px;"> Your Email</div>
+          <input class="input1" type="email" id="email" name="email" style="width: 100%;" required />
+          <div style="font-size: 20px; margin-top: 20px;">Your Password</div>
+          <input class="input1" type="text" id="password" name="password" style="width: 100%;" required />
+          <button class="login_button" type="submit" style="width: 100%;">Login</button>
+        </form>
+
+        <div class="MveSignUp">
+          <div>
+            Dont have an account?
+          </div>
+          <a href=""> Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<!-- <script src="./loginIndex.js"></script> -->
+<script>
+function signin()
+{
+    var email = document.getElementById("email").value;
+    alert("Welcome back" + email)
+    window.open("../index.html", "_blank");
+}
+</script>

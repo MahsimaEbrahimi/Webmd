@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-right.css' rel='stylesheet'>
+</head>
+
+<body>
+  <header>
+    <a href="./index.html" class="nav-item ">
+      <img src="webmd_logo_white.svg" class="imageH">
+    </a>
+
+    <a class="nav-item Action">
+      <p>conditions</p>
+    </a>
+
+    <a class="nav-item Action">
+      <p>Drugs and supplements</p>
+    </a>
+
+    <span class="nav-item Action more">
+      <p>Well-bieng</p>
+      <ul class="drop-more">
+        <li class="drop-more-item">
+          <a href="" class="drop-more-item-link">Aging Well</a>
+        </li>
+        <li class="drop-more-item">
+          <a href="./BabyPage/BabyIndex.Html" class="drop-more-item-link">Baby</a>
+        </li>
+        <li class="drop-more-item">
+          <a href="" class="drop-more-item-link">Birth Control</a>
+        </li>
+      </ul>
+    </span>
+
+    <a class="nav-item Action">
+      <p>Symptom checker</p>
+    </a>
+
+    <a href="./search for a doctor/SearchDocIndex.html" class="nav-item Action">
+      <p>find a doctor</p>
+    </a>
+
+    <span class="nav-item Action more">
+      <p>more</p>
+      <ul class="drop-more">
+        <li class="drop-more-item">
+          <a href="./news/newsIndex.html" class="drop-more-item-link">news</a>
+        </li>
+        <li class="drop-more-item">
+          <a href="" class="drop-more-item-link">blogs</a>
+        </li>
+        <li class="drop-more-item">
+          <a href="" class="drop-more-item-link">products</a>
+        </li>
+        <li class="drop-more-item">
+          <a href="" class="drop-more-item-link">Webinars</a>
+        </li>
+      </ul>
+    </span>
+
+    <a class="nav-item ">
+      <p class="Space" style="color: rgb(27, 27, 113);">|</p>
+    </a>
+
+    <a class="nav-item subscribe">
+      subscribe
+    </a>
+
+    <a class="nav-item login " href="./loginPage/loginIndex.html" style="text-decoration: none;">
+      <p class="Action" id="loginBtn">log in</p>
+    </a>
+
+    <a href="./search for a doctor/SearchDocIndex.html" class="nav-item search">
+      <i class="fa fa-search"></i>
+    </a>
+  </header>
+
+  <div class="STORIES">
+    TODAY'S TOP STORIES
+  </div>
+
+  <div class="medicin">
+    <div class="medicin-img-container">
+      <img class="medicin-img" src="./1800x1200_seeking_answers_through_testing_uveal_melanoma_ref_guide (1).webp"
+        alt="medicin">
+    </div>
+    <div class="medicin-texts">
+      <h1>How Genes Affect Lung Cancer</h1>
+      <p class="cancer">Lung cancer and genes are related, but probably not in the way you might think. See why it's
+        important to learn if a type of lung cancer has certain genetic markers.</p>
+
+    </div>
+  </div>
+  <div class="wrapper_all">
+    <div class="wrapShare">
+      <img src="./1800ss_getty_rf_painting.webp" alt="Painting" class="share">
+      <p class="PhotoText">Alzheimer's Symptoms: <br />Therapies That Can Help</p>
+
+    </div>
+
+    <div class="wrapShare">
+      <img src="./1800ss_getty_rf_bowl_of_sugar.webp" alt="suger" class="share ShareRest">
+      <p class="PhotoText">12 Ways Too Much Sugar <br /> Harms Your Body</p>
+    </div>
+
+    <div class="wrapShare">
+      <img src="./1800x1200_ginger_health_benefits_slideshow.webp" alt="suger" class="share ShareRest">
+      <p class="PhotoText">find vinger benefits</p>
+    </div>
+  </div>
+  <div class="LivingHealthy">
+    Living Healthy
+  </div>
+  <div class="container">
+
+    <div class="imgTT" style="padding-left: 0;">
+      <div class="imgT">
+        <img src="./living-healthy-mental-health.webp" alt="mental health" class="Health">
+        <p class="imgTc">Mental Health</p>
+      </div>
+    </div>
+
+    <div class="imgTT">
+      <div class="imgT">
+        <img src="./living-healthy-diet-weight-management.webp" alt="mental health" class="Health">
+        <p class="imgTc">Diet & weight management</p>
+      </div>
+    </div>
+
+    <div class="imgTT">
+      <div class="imgT">
+        <img src="./living-healthy-healthy-aging.webp" alt="mental health" class="Health">
+        <p class="imgTc">Healthy Aging</p>
+
+      </div>
+    </div>
+
+    <div class="imgTT">
+      <div class="imgT">
+        <img src="./living-healthy-sex-relationships.webp" alt="mental health" class="Health">
+        <p class="imgTc">Relationships</p>
+
+      </div>
+    </div>
+
+    <div class="imgTT">
+      <div class="imgT">
+        <img src="./living-healthy-fitness-exercise.webp" alt="mental health" class="Health">
+        <p class="imgTc">Fitness & Excercise</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- <script src="./index.js"></script> -->
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+const searchQuery = urlParams.get('email');
+if (searchQuery != null)
+{
+    document.getElementById("loginBtn").innerHTML = "Welcome " + searchQuery;
+}
+</script>

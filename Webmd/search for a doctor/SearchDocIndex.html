@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./StyleSearchDoc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>        
+            <a href="../index.html"  class="nav-item ">
+                <img src="webmd_logo_white.svg" class="imageH">
+            </a>
+              
+            <a class="nav-item Action">
+                <p>conditions</p>
+            </a>
+
+            <a class="nav-item Action">
+               <p>Drugs and supplements</p>
+            </a>
+
+            <span class="nav-item Action more">
+                <p>Well-bieng</p>
+                <ul class="drop-more">
+                  <li class="drop-more-item">
+                    <a href="" class="drop-more-item-link">Aging Well</a>
+                  </li>
+                  <li class="drop-more-item">
+                    <a href="../BabyPage/BabyIndex.Html" class="drop-more-item-link">Baby</a>
+                  </li>
+                  <li class="drop-more-item">
+                    <a href="" class="drop-more-item-link">Birth Control</a>
+                  </li>
+                </ul>
+              </span>
+
+             <a class="nav-item Action">
+                <p>Symptom checker</p>
+             </a>
+             
+             <a href="../search for a doctor/SearchDocIndex.html" class="nav-item Action">
+                <p>find a doctor</p>
+             </a>
+             
+             <span class="nav-item Action more">
+                  <p>more</p>     
+                    <ul class="drop-more">
+                      <li class="drop-more-item">
+                        <a href="../news/newsIndex.html" class="drop-more-item-link">news</a>
+                      </li>
+                      <li class="drop-more-item">
+                        <a href="" class="drop-more-item-link">blogs</a>
+                      </li>
+                      <li class="drop-more-item">
+                        <a href="" class="drop-more-item-link">products</a>
+                      </li>
+                      <li class="drop-more-item">
+                        <a href="" class="drop-more-item-link">Webinars</a>
+                      </li>                    
+                    </ul>
+                  </span>
+
+             <a class="nav-item ">
+              <p class="Space" style="color: rgb(27, 27, 113);">|</p>
+           </a>
+
+             <a class="nav-item subscribe">
+               subscribe
+             </a>
+
+             <a class="nav-item login " href="../loginPage/loginIndex.html" style="text-decoration: none;">
+                <p class="Action">log in</p>
+              </a>
+
+              <a href="../search for a doctor/SearchDocIndex.html" class="nav-item search">
+                <i class="fa fa-search"></i>
+              </a>
+    </header>
+
+        <div class="nav-first">
+            <!-- <img class="LOGO" src="./webmd_logo_white.svg"> -->
+            <form class="example">
+                <input type="text" placeholder="Search here for a doctor" name="search" id="searchInput">
+                <button type="submit" onclick="search()"><i class="fa fa-search search"></i></button>
+            </form>
+        </div>  
+
+<div class="specialties"> Popular specialties</div>
+
+<div class="specialties" id="searchResult"></div>
+
+    <div class="imgKeeper">  
+       
+       <div class="container">
+            <div  class="common_class dentist">
+                <img src="./Dentist.svg" >
+                <a class="a" href=""> Dentist</a>
+            </div>  
+            <div class="common_class Dermatologist">
+            <img src="./Dermatologist.svg" >
+            <a class="a" href=""> Dermatologist</a>
+    
+            </div>
+            <div class="common_class Eye">
+            <img  src="./Eye Doc.svg" >
+            <a class="a" href=""> Eye doctor</a>
+                
+            </div>
+            <div class="common_class Primary">
+            <img  src="./Primary care.svg" >
+            <a class="a" href=""> Primary care</a>
+    
+            </div>
+            <div class="common_class Psychiatris">
+            <img src="./Psychiatrist.svg" >
+            <a class="a" href=""> Psychiatris</a>
+    
+            </div>
+       </div>
+
+    </div>
+    <div class="SocialDoctor">
+        <div class="SocialDoctorText">
+            <div class="SocialDoctorTitle">
+                Choose the healthcare </br>that is right for you
+            </div>
+            <div class="ItemGroup">
+            <div class="first_Group">
+                <div class="bullets">
+                </div>
+                <div>
+                    Profiles for 3 million+ physicians
+                </div>
+            </div>
+            <div class="first_Group">
+                <div class="bullets">
+                </div>
+                <div>
+                    Book appointments online including Video Visit and Chat Now options                </div>
+            </div>
+            <div class="first_Group">
+                <div class="bullets">
+                </div>
+                <div>
+                    Find award winning hospitals by specialty
+                </div>
+            </div>                
+            </div>
+
+        </div>   
+         <img class="SocialDoctorImg" src="./SocialDoctor.991d003d.webp" />
+    </div>
+
+</body>
+</html>
+
+<!-- <script src="./SearchDocJs.js"></script> -->
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+const searchQuery = urlParams.get('search');
+if (searchQuery != null)
+{
+    document.getElementById("searchResult").innerHTML = "Search result for " + searchQuery;
+}
+</script>

@@ -1,0 +1,305 @@
+body
+{
+    margin: 0%;
+    background-color: hsla(0,0%,100%,.8);
+}
+
+header
+{
+    z-index: 10;
+    background-color: rgb(27, 27, 113);   
+     text-align: center;
+     position: fixed;
+     width: 100%;
+     top: 0;
+}
+
+.nav-item
+{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+    padding: 5px;
+    font-size: 20px;
+    position: relative;
+}
+.Action::after
+{
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    transition: 100ms all;
+    margin-bottom:20px;
+
+}
+.Action:hover:after
+{
+    width: 100%;
+}
+
+.imageH
+{
+    display:inline-block;
+    width:80px;
+    width:80px;    
+    overflow: hidden; 
+    padding-left: 0;
+}
+
+.subscribe
+{
+    border: 2px solid white;
+    border-radius: 10px;
+
+}
+
+.drop-more
+{
+    z-index: 15;
+    /* display: none; */
+    position: absolute;  
+    background-color: rgb(27, 27, 113);
+    min-width: 160px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    left: -30%;
+    visibility: hidden;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+.more
+{
+    position: relative;
+}
+
+.more:hover .drop-more
+{
+    /* display: block; */
+    left: -10%;
+    opacity: 1;
+    visibility: visible;
+}
+.drop-more-item
+{
+    text-align: left;
+    padding: 15px 0;
+    margin: 0 15px;
+    border-bottom: 1px solid #c6cedb;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.drop-more-item-link
+{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.drop-more-item:last-child
+{
+    border-bottom: none;
+}
+
+.drop-more-item:hover .drop-more-item-link
+{
+    color: blue;
+}
+
+.Space
+{
+   border-left: 2px solid white;
+   height: 2em;
+}
+
+.subscribe:hover
+{
+    background-color:white;
+    color: rgb(27, 27, 113);
+}
+
+.search:hover
+{
+    color:  rgb(27, 27, 113);
+    background-color: white;
+    border-radius: 30%;
+}
+
+.nav-first
+{
+    margin-top: 90px;
+    /* width: 100%; */
+    height: 150px;
+    background-color: rgb(27, 27, 113);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.LOGO
+{
+    width:120px;
+    width:120px; 
+    margin-left: 50px;
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  form.example input[type=text] {
+    padding: 30px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 400px;
+    background: #f1f1f1;
+  }
+  
+  form.example button {
+    float: left;
+    width: 80px;
+    padding: 30px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+
+  .example
+  {
+    position: relative;
+  }
+
+.imgKeeper
+{
+
+    text-align: center;
+    border-bottom: 2px solid  rgb(169, 202, 230);
+    padding-bottom: 30px;
+
+}
+
+.common_class
+{
+    padding: 25px;
+}
+
+.dentist
+{
+    display: flex;
+    flex-direction: column;
+}
+.Dermatologist
+{
+    display: flex;
+    flex-direction: column;    
+}
+.Eye
+{
+    display: flex;
+    flex-direction: column; 
+}
+.Primary
+{
+    display: flex;
+    flex-direction: column; 
+}
+
+.Psychiatris
+{
+    display: flex;
+    flex-direction: column;  
+}
+
+.a
+{
+    margin-top:30px;
+    text-decoration: none;
+    
+}
+.a:link, .a:visited
+{
+color: #000000;
+}
+
+.a:hover
+{
+    color: rgb(76, 93, 113);
+}
+.specialties
+{
+    font-size: 40px;
+    color:rgb(5, 28, 103) ;
+    text-align: center;
+    margin: 20px 0px;
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.SocialDoctor
+{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    background-color:#caf6f9;
+    align-items: center;
+}
+.SocialDoctorText
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15%;
+}
+.SocialDoctorImg
+{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    padding-right: 10%;
+}
+.SocialDoctorTitle
+{
+    font-size: 40px;
+}
+.bullets
+{
+    content: "";
+    border-bottom: 5px solid #5ac6cd;
+    width: 12px;
+    height: 8px;
+    display: inline-block;
+    padding: 8px 7px 12px 7px;
+    line-height: 26.4px;
+    margin-right: 0.5em;
+    border-bottom-color: #5ac6cd;
+    
+}
+.first_Group
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding-top: 40px;
+}
